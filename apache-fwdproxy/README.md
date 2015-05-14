@@ -18,4 +18,4 @@ b) Start the the docker container and httpd server.
 ```
 sudo docker-compose up
 ```
-The setup does a port forwarding the from host:8585 -> docker_container:80
+The setup does a port forwarding the from `host:8585 -> docker_container:80`
