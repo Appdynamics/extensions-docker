@@ -1,0 +1,5 @@
+apachefwdproxy:
+  image: extensions/apache-fwdproxy
+  hostname: apache.fwdproxy
+  ports:
+    - "8585:80"
