@@ -1,0 +1,12 @@
+mysql:
+  image: extensions/mysql
+  hostname: mysql.server
+  ports:
+    - "3306:3306"
+  environment: 
+   - DB_REMOTE_ROOT_NAME=root
+   - DB_REMOTE_ROOT_PASS=welcome
+   - DB_REMOTE_ROOT_HOST=%
+   - DB_USER=root
+   - DB_PASS=welcome
+   - DB_NAME=extensions
