@@ -1,0 +1,9 @@
+# Can be used for Extensions Development and Transformers Tool
+# @author: abey.tom@appdynamics.com
+
+rabbit1:
+  image: extensions/rabbitmq
+  hostname: rabbit1
+  ports:
+    - "5672:5672"
+    - "15672:15672"

@@ -1,0 +1,5 @@
+mongodb:
+  image: extensions/mongodb
+  hostname: mongodb.server
+  ports:
+    - "27017:27017"
