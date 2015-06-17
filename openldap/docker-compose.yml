@@ -1,0 +1,5 @@
+openldap:
+  image: extensions/openldap
+  hostname: openldap
+  ports:
+    - "389:389"
