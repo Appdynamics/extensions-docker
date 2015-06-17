@@ -23,7 +23,26 @@ sudo docker-compose up
 The setup does a port forwarding the from `host:389 -> docker_container:389`
 
 ### LDAP Configuration
+##### Connection
 ```
 Bind DN: cn=admin,ou=admins,dc=appdynamics,dc=com
 password: welcome
+```
+##### Users
+```
+Base DN: ou=people,dc=appdynamics,dc=com
+Attributes: dn, cn, uid, memberOf
+```
+##### Groups
+```
+Base DN: ou=people,dc=appdynamics,dc=com
+Attributes: dn, cn, member
+```
+##### BuiltIn Users and Groups
+`welcome` is the password for all Users
+```
+abey, tandav: Administrators
+user1, user2: Read Only
+user1: Group1
+user1, user2, user3: Group2
 ```
