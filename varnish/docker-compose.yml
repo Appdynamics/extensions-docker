@@ -1,0 +1,6 @@
+varnish:
+  image: extensions/varnish_with_vagent2
+  hostname: vagent2
+  ports:
+    - "6085:6085"
+    - "6081:6081"
