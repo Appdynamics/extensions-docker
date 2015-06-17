@@ -13,6 +13,7 @@ if [ ! -f /data/lib/ldap/DB_CONFIG ]; then
     ldapmodify -Y EXTERNAL -H ldapi:/// -f /root/manager.ldif
     ldapmodify -Y EXTERNAL -H ldapi:/// -f /root/domain.ldif
 
+    ldapadd -Q -Y EXTERNAL -H ldapi:/// -f /root/memberOf.ldif
     ldapadd -x -D cn=admin,ou=admins,dc=appdynamics,dc=com -w welcome -f /root/base.ldif
 
     service slapd stop

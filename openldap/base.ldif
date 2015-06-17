@@ -27,7 +27,7 @@ sn: admin
 uid: admin
 description: Admin User
 
-dn: cn=abey,ou=admins,dc=appdynamics,dc=com
+dn: cn=abey,ou=people,dc=appdynamics,dc=com
 objectClass: inetOrgPerson
 objectClass: organizationalPerson
 objectClass: person
@@ -37,7 +37,7 @@ sn: abey
 uid: abey
 userpassword: welcome
 
-dn: cn=tandav,ou=admins,dc=appdynamics,dc=com
+dn: cn=tandav,ou=people,dc=appdynamics,dc=com
 objectClass: inetOrgPerson
 objectClass: organizationalPerson
 objectClass: person
@@ -81,8 +81,8 @@ dn: cn=Administrators,ou=groups,dc=appdynamics,dc=com
 objectClass: top
 objectClass: groupOfNames
 cn: Administrators
-member: cn=abey,ou=admins,dc=appdynamics,dc=com
-member: cn=tandav,ou=admins,dc=appdynamics,dc=com
+member: cn=abey,ou=people,dc=appdynamics,dc=com
+member: cn=tandav,ou=people,dc=appdynamics,dc=com
 
 dn: cn=Read Only,ou=groups,dc=appdynamics,dc=com
 objectClass: top
