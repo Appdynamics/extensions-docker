@@ -35,7 +35,7 @@ Attributes: dn, cn, uid, memberOf
 ```
 ##### Groups
 ```
-Base DN: ou=people,dc=appdynamics,dc=com
+Base DN: ou=groups,dc=appdynamics,dc=com
 Attributes: dn, cn, member
 ```
 ##### BuiltIn Users and Groups
