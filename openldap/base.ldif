@@ -100,7 +100,7 @@ member: cn=user1,ou=people,dc=appdynamics,dc=com
 dn: cn=Group2,ou=groups,dc=appdynamics,dc=com
 objectClass: top
 objectClass: groupOfNames
-cn: Group1
+cn: Group2
 member: cn=user1,ou=people,dc=appdynamics,dc=com
 member: cn=user2,ou=people,dc=appdynamics,dc=com
 member: cn=user3,ou=people,dc=appdynamics,dc=com
