@@ -1,0 +1,26 @@
+# Docker Extension On Container
+Create a Docker container with the Machine Agent and Docker Monitoring Extension
+
+### Prerequisites
+1. Install `docker`
+2. Install `docker-compose`
+
+### Installation
+
+* Clone this git repo
+* Download the `machineagent-bundle-64bit-linux.zip` to the directory `docker-machineagent`
+* Download the latest `DockerMonitor.zip` to the directory `docker-machineagent`
+* Copy the `config.yml` from DockerMonitor.zip to the directory `docker-machineagent` and make the necessary changes
+* Build the container
+```
+cd docker-machineagent
+sudo docker build -t extensions/docker-machine-agent .
+```
+* Edit the file `docker-compose.yml` and update `hostname` and `JAVA_OPTS`
+* Start the container 
+ ```
+ sudo docker-compose up
+ ```
+* The machine agent logs will be available at `/var/log/machine-agent/machine-agent.log` in the host machine.
+
+
