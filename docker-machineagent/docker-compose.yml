@@ -5,4 +5,4 @@ dockerextensioncontainer:
     - /var/run/docker.sock:/var/run/docker.sock
     - /var/log/machine-agent:/log/machine-agent
   environment:
-    JAVA_OPTS: "-Dappdynamics.agent.logs.dir=/log/machine-agent -Dappdynamics.controller.hostName=192.168.1.132 -Dappdynamics.controller.port=8090 -Dappdynamics.controller.ssl.enabled=false  -Dappdynamics.agent.applicationName=Docker_MA -Dappdynamics.agent.tierName=Docker_MA -Dappdynamics.agent.nodeName=Dokcer_MA_Node -Dappdynamics.agent.accountName=customer1 -Dappdynamics.agent.accountAccessKey=8fb688a7-4cea-418a-b7ef-2f48a469bfa5 -Dappdynamics.agent.uniqueHostId=docker-ma.unique.host" 
+    JAVA_OPTS: "-Dappdynamics.agent.logs.dir=/log/machine-agent -Dappdynamics.controller.hostName=192.168.1.132 -Dappdynamics.controller.port=8090 -Dappdynamics.controller.ssl.enabled=false  -Dappdynamics.agent.applicationName=Docker_MA -Dappdynamics.agent.tierName=Docker_MA -Dappdynamics.agent.nodeName=Docker_MA_Node -Dappdynamics.agent.accountName=customer1 -Dappdynamics.agent.accountAccessKey=8fb688a7-4cea-418a-b7ef-2f48a469bfa5 -Dappdynamics.agent.uniqueHostId=docker-ma.unique.host" 
