@@ -1,5 +1,5 @@
 # Docker Extension On Container
-Create a Docker container with the Machine Agent and Docker Monitoring Extension
+The Docker Extension is installed on a container along with the machine agent. The docker unix-socket from the is attached as a volume in the container.
 
 ### Prerequisites
 1. Install `docker`
