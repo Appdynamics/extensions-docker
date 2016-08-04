@@ -1,0 +1,6 @@
+solr:
+  container_name: "solr"
+  image: "extensions/solr" 
+  hostname: solr.server
+  ports:
+    - "8983:8983"
