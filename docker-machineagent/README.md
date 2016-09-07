@@ -3,7 +3,7 @@ The Docker Extension is installed on a container along with the machine agent. T
 
 ### Prerequisites
 1. Install `docker`
-2. Install `docker-compose`
+2. Install `docker-compose` 
 
 ### Installation
 
@@ -11,6 +11,10 @@ The Docker Extension is installed on a container along with the machine agent. T
 * Download the `machineagent-bundle-64bit-linux.zip` to the directory `docker-machineagent`
 * Download the latest `DockerMonitor.zip` to the directory `docker-machineagent`
 * Copy the `config.yml` from DockerMonitor.zip to the directory `docker-machineagent` and make the necessary changes
+* Copy the `socket-command.sh` from DockerMonitor.zip to the directory `docker-machineagent` and comment the existing commands. Add the following line at the bottom 
+```
+echo -e "GET $1 HTTP/1.0\r\n" | sudo nc -U -q 5 /var/run/docker.sock
+```
 * Build the container
 ```
 cd docker-machineagent
