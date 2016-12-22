@@ -3,7 +3,8 @@ MAINTAINER Abey Tom abey.tom@appdynamics.com
 
 RUN yum install -y wget unzip tar 
 
-RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-7.noarch.rpm
+#RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-7.noarch.rpm
+RUN yum -y install epel-release
 
 RUN yum install -y erlang
 
