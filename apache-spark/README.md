@@ -1,3 +1,6 @@
+# TL;DR  
+`docker compose up -d --build`
+
 # Spark Cluster with Docker
 Installs a spark standalone cluster with 1 master node and 3 slave nodes
 
