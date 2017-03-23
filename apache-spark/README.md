@@ -1,5 +1,5 @@
 # TL;DR  
-`docker compose up -d --build`
+`docker-compose up -d --build`
 
 # Spark Cluster with Docker
 Installs a spark standalone cluster with 1 master node and 3 slave nodes
@@ -11,7 +11,7 @@ Installs a spark standalone cluster with 1 master node and 3 slave nodes
 ## Installation
 #### Start the cluster
 ```
-docker compose up -d --build
+docker-compose up -d --build
 ```
 #### Port Forwarding
 The following ports from the docker host machine is mapped to the container. The spark UI can be access with this.
