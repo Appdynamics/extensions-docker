@@ -12,11 +12,12 @@ docker compose up -d --build
 ```
 #### Port Forwarding
 The following ports from the docker host machine is mapped to the container. The spark UI can be access with this.
-
+```
 http://docker-host:8585 -> master:8080
 http://docker-host:8586 -> worker1:8081
 http://docker-host:8587 -> worker2:8081
 http://docker-host:8588 -> worker3:8081
+```
 
 ## Run a job
 Jobs can be manually executed on demand.
