@@ -39,3 +39,4 @@ Jobs can be manually executed on demand.
   /usr/local/spark/examples/jars/spark-examples_2.11-2.0.2.jar \
   100
 ```
+The jobs can be submitted externally using a spark client also.
