@@ -1,0 +1,51 @@
+version: '2'
+services:
+  spark.master:
+    build: .
+    hostname: spark.master
+    ports:
+      - "8585:8080"
+    volumes:
+      - .:/external
+
+  spark_worker1:
+    build: .
+    hostname: spark.worker1
+    links:
+      - spark.master
+    volumes:
+      - .:/external
+    environment:
+      - SLAVE=true
+    ports:
+      - "8586:8081"
+    depends_on:
+      - spark.master
+
+  spark_worker2:
+    build: .
+    hostname: spark.worker2
+    links:
+      - spark.master
+    volumes:
+      - .:/external
+    environment:
+      - SLAVE=true
+    ports:
+      - "8587:8081"
+    depends_on:
+      - spark.master
+
+  spark_worker3:
+    build: .
+    hostname: spark.worker3
+    links:
+      - spark.master
+    volumes:
+      - .:/external
+    environment:
+      - SLAVE=true
+    ports:
+      - "8588:8081"
+    depends_on:
+      - spark.master
