@@ -1,4 +1,4 @@
-FROM ubuntu:14.10
+FROM ubuntu:latest
 MAINTAINER abey.tom@appdynamics.com
 
 RUN apt-get update \
