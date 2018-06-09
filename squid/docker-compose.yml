@@ -1,0 +1,5 @@
+squid:
+  image: extensions/squid
+  hostname: squid
+  ports:
+    - "3128:3128"
