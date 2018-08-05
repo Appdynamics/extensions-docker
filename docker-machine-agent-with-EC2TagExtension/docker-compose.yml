@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  docker-machine-agent:
+    build: .
+    container_name: docker-machine-agent
+    image: appdynamics/docker-machine-agent-withec2instancidtag
+    environment:
+      - APPD_HOST=$APPD_HOST
+      - APPD_PORT=$APPD_PORT
+      - APPD_ACCOUNT_NAME=$APPD_ACCOUNT_NAME
+      - APPD_ACCESS_KEY=$APPD_ACCESS_KEY
+      - APPD_SSL_ENABLED=$APPD_SSL_ENABLED
+    # - APPD_AGENT_MAXMETRICS=$APPD_AGENT_MAXMETRICS
+    volumes:
+      - /:/hostroot:ro
+      - /var/run/docker.sock:/var/run/docker.sock
