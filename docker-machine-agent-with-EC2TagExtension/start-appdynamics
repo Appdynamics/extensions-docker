@@ -16,6 +16,4 @@ MA_PROPERTIES+=" -Dappdynamics.controller.ssl.enabled=${APPD_SSL_ENABLED}"
 MA_PROPERTIES+=" -Dappdynamics.sim.enabled=true -Dappdynamics.docker.enabled=true"
 
 # Start Machine Agent
-#bash
-#chmod +x ${MACHINE_AGENT_HOME}machineagent.jar
 ${JAVA_HOME}/jre/bin/java ${MA_PROPERTIES} -jar ${MACHINE_AGENT_HOME}machineagent.jar
